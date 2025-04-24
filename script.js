@@ -214,16 +214,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1500);
     });
 });
-document.addEventListener('DOMContentLoaded', function () {
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const diminuiFonteBotao = document.getElementById('diminuir-fonte');
 
-    const botaoDeAcessibilidade = document.getElementyById('botao-acessibilidade');
+    let tamanhoAtualFonte = 1;
 
-    aumentaFonteBotao.addEventListener('click', function () {
-        tamanhoAtualFonte += 0.1;
-    })
-
-    diminuiFonteBotao.addEventListener('click', function () {
-        tamanhoAtualFonte -= 0.1;
-    })
-
-});
+document.getElementById('aumentarFonte').addEventListener('click', function() {
+     tamanhoAtualFonte += 0.1;
+     document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+  });
+  document.getElementById('diminuirFonte').addEventListener('click', function() {
+    tamanhoAtualFonte -= 0.1;
+     document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+  });
