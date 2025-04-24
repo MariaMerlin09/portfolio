@@ -214,3 +214,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1500);
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+
+    const botaoDeAcessibilidade = document.getElementyById('botao-acessibilidade');
+
+    aumentaFonteBotao.addEventListener('click', function () {
+        tamanhoAtualFonte += 0.1;
+    })
+
+    diminuiFonteBotao.addEventListener('click', function () {
+        tamanhoAtualFonte -= 0.1;
+    })
+
+});
