@@ -216,14 +216,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
     const aumentaFonteBotao = document.getElementById('aumentar-fonte');
     const diminuiFonteBotao = document.getElementById('diminuir-fonte');
-
+    
     let tamanhoAtualFonte = 1;
 
 document.getElementById('aumentarFonte').addEventListener('click', function() {
      tamanhoAtualFonte += 0.1;
      document.body.style.fontSize = `${tamanhoAtualFonte}rem`
   });
+  document.getElementById('voltarFonte').addEventListener('click', function() {
+    tamanhoAtualFonte = 1;
+    document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+ });
   document.getElementById('diminuirFonte').addEventListener('click', function() {
     tamanhoAtualFonte -= 0.1;
      document.body.style.fontSize = `${tamanhoAtualFonte}rem`
   });
+  document.getElementById('botaoAcessibilidade').addEventListener('click', function(){
+    
+  })
